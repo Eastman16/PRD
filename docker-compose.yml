@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_USER: user
+      MYSQL_ROOT_PASSWORD: test123
+      MYSQL_DATABASE: del
+    ports:
+      - "3306:3306"
+    volumes:
+      - my-db:/var/lib/mysql
+  web:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+  api:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+    restart: on-failure
+
+volumes:
+  my-db:
