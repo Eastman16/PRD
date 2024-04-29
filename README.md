@@ -1,4 +1,5 @@
 # Database System for Population Records Department
+# (Links to the comprehensive documentation are provided at the bottom.)
 ## Authors: Marcin Sitarz, Łukasz Wdowiak
 
 # Demonstration
@@ -9,3 +10,8 @@ This application is a comprehensive system designed to streamline and automate t
 
 # Features
 Key functionalities include the ability to handle various applications from residents for changes in their registration details such as PESEL number updates, name changes, and address updates. The system supports complex queries and provides secure and controlled access to data, ensuring compliance with privacy regulations. The backend logic includes triggers and procedures for data validation, ensuring the integrity and accuracy of the data stored. Security features are robust, incorporating encrypted data storage, secure user authentication mechanisms, and protection against common security threats like SQL injection.
+
+# Documentation
+For a more detailed exploration of specific functionalities, refer to the provided documentation:
+- **English version:** [documentation.pdf](./documentation.pdf)
+- **Polish version:** [dokumentacja.pdf](./dokumentacja.pdf)
